@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
 <!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src-elem 'self'">-->
-    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), layout-animations=(), legacy-image-formats=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta http-equiv="X-Content-Type-Options" content="'nosniff' always" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), layout-animations=(), legacy-image-formats=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="X-Content-Type-Options" content="'nosniff' always" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta name="referrer" content="no-referrer" />
     <title>About | Vos IT Consultancy</title>
+    <link rel="prefetch" href="styleDark.css" as="style" type="text/css" />
+    <link rel="prefetch" href="styleLight.css" as="style" type="text/css" />
+    <link rel="prefetch" href="switchStyles.js" as="script" />
+    <link rel="prefetch" href="vos-lineart-dark.svg" as="image" type="image/svg+xml" />
+    <link rel="prefetch" href="vos-lineart-light.svg" as="image" type="image/svg+xml" />
     <link id="stylesheet" rel="stylesheet" href="styleDark.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" as="image" type="image/x-icon" />
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" as="image" type="image/png" >
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" as="image" type="image/png" >
+    <link rel="icon" href="favicon-64x64.png" sizes="64x64" as="image" type="image/png" >
   </head>
   <body>
     <button id="switch-button">Toggle Stylesheet</button>
