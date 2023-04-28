@@ -5,15 +5,20 @@ set -euo pipefail
  set -euox pipefail
 
 sizes=(
-  16x16
-  32x32
-  64x64
+  '16x16'
+  '32x32'
+  '64x64'
 )
 
 gitroot="$(git rev-parse --show-toplevel)"
 
 for size in ${sizes[*]}
 do
-  convert -size "${size}" "${gitroot}/docs/vos-lineart-dark.svg" "${gitroot}/docs/favicon-${size}.png"
+  convert \
+    "${gitroot}/docs/vos-lineart-dark.svg" \
+    -size "${size}" \
+    -transparent white \
+    -background none \
+    "${gitroot}/docs/favicon-${size}.png"
 done
 
