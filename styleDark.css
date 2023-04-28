@@ -1,0 +1,156 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  background-image: url('vos-lineart-dark.svg');
+  background-color: #282c34;
+  color: #abb2bf;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li a {
+  color: #ffa500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav li a:hover {
+  color: #61afef;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Headings Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+a[href^="mailto:"], a[href^="tel:"] {
+  color: orange;
+}
+
+footer {
+  padding: 1rem 2rem;
+  color: orange;
+  text-align: center;
+  opacity: 1;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-top: 1rem;
+  }
+}
+
+a[href^="mailto:"] {
+  color: #FF8C00;
+}
+
+a[href^="tel:"] {
+  color: #FF8C00;
+}
+
