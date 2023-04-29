@@ -10,9 +10,9 @@ stylesheet.href = currentStyle;
 
 // Set the initial state of the switch button
 if (currentStyle === 'styleDark.css') {
-  switchButton.textContent = 'Switch to Light';
+  switchButton.textContent = 'Light mode';
 } else {
-  switchButton.textContent = 'Switch to Dark';
+  switchButton.textContent = 'Dark mode';
 }
 
 // Switch the stylesheet and update the switch button text when clicked

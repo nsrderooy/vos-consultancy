@@ -24,20 +24,33 @@
     <link rel="icon" href="favicon-64x64.png" sizes="64x64" as="image" type="image/png" >
   </head>
   <body>
-    <button id="switch-button">Toggle Stylesheet</button>
-    <script src="switchStyles.js"></script>
+
     <div class="container">
-      <header>
+      <header class="sticky-header">
         <nav>
           <ul>
-<!--            <li><a href="index.html">Home</a></li>-->
-<!--            <li><a href="contact.html">Contact</a></li>-->
+            <li><a href="#Mission">Mission</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><button class="button" id="switch-button">Toggle Stylesheet</button></li>
+            <script src="switchStyles.js"></script>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>About Vos IT Consultancy</h1>
-        <h2>Our Services</h2>
+        <hr style="height:2px;background-color:black">
+        <div id="Mission"></div>
+        <h1>Our mission @ Vos IT Consultancy</h1>
+        <section>
+          <h1>Objective</h1>
+          <p>To create a secure, stable, highly available and rapidly deployable environment that complies to international regulations, achievable through standardisation, automation, teamwork and the sharing of knowledge. Through automation, I have helped companies save valuable resources and make the IT audit process smoother.</p>
+        </section>
+        <hr style="height:2px;background-color:black">
+        <h1>Services offered @ Vos IT Consultancy</h1>
+        <div id="Services"></div>
+        <section>
         <ul>
           <li>IT Linux Consultancy</li>
           <li>IT Linux Security</li>
@@ -56,6 +69,115 @@
             Synology (2021), and Erasmus University Rotterdam.
           </li>
           <li>SAML</li>
+        </ul>
+        </section>
+        <hr style="height:2px;background-color:black">
+        <div id="Resume"></div>
+        <h1>Resume</h1>
+
+        <section>
+          <h2>Summary</h2>
+          <p>My 4 years of pentesting expertise with a focus on SAML was confirmed by the Dutch government, Synology (2021), and Erasmus University Rotterdam. I was a member of the Dutch eHerkenning eID security officers council and the Dutch SURFcert (SCIRT team), as well as a member of the Erasmus SSC ICT Computer Emergency Response Team (CERT). I have also taught security training at Signicat resulting in the findings of 30 vulnerabilities. I am experienced at complying to regulations like Third Party Memorandum, ISO 27001 and SOC2. I am also a highly skilled and experienced Linux expert with over 20 years of experience. I specialise in automation using Ansible (8 years) and Puppet (2 years), and also experienced with Terraform automation and am proficient in OpenSSL and Bash scripting. </p>
+        </section>
+        <section>
+          <h2>Experience</h2>
+          <section>
+              <h3>Information Security Analyst, Signicat (Connectis)</h3>
+              <p>Dec 2020 - Feb 2023</p>
+              <ul>
+                <li>Primarily responsible for ISO27001 certification</li>
+                <li>Primarily responsible for Third Party Memorandum (TPM) for Dutch `DigiD` eID audit</li>
+                <li>Primarily responsible for Third Party Memorandum (TPM) for Dutch `eHerkenning` eID audit</li>
+                <li>Primarily responsible for regulatory, governmental and legal compliance of the Dutch branch</li>
+                <li>Primarily responsible internal pentesting of the Dutch branch</li>
+                <li>Giving security related lectures, hands on pentesting our own software</li>
+              </ul>
+            <ul>
+              <h3>Senior System Operations Engineer, Signicat (Connectis)</h3>
+              <p>Dec 2016 - Dec 2020</p>
+              <ul>
+                <li>Primarily responsible for ISO27001 certification</li>
+                <li>Primarily responsible for Third Party Memorandum (TPM) for Dutch DigiD eID certification</li>
+                <li>Senior Ansible programmer</li>
+                <li>Senior VMware administrator</li>
+                <li>Senior Linux administrator</li>
+                <li>Senior Network administrator</li>
+                <li>Safeguarging the functionality of IT products</li>
+                <li>Authorization and security</li>
+              </ul>
+              <h3>Senior System Administrator, Erasmus University Rotterdam</h3>
+              <p>Jan 2014 - Dec 2016</p>
+              <ul>
+                <li>Part of the Dutch `SURFcert` (SCIRT team)</li>
+                <li>Primarily sub-department contact for CERT (Computer Emergency Response Team)</li>
+                <li>Senior Puppet programmer</li>
+                <li>Senior VMware administrator</li>
+                <li>Senior Linux administrator</li>
+                <li>Safeguarging the functionality of IT products</li>
+                <li>Installing, Maintaining and Repairing of IT products</li>
+                <li>Authorization and security</li>
+                <li>Datacenter design</li>
+                <li>Technical contact for tenders</li>
+              </ul>
+              <h3>System Administrator, Rotterdam School of Management, Erasmus University Rotterdam</h3>
+              <p>Aug 2002 - Jan 2014</p>
+              <ul>
+                <li>Senior VMware administrator</li>
+                <li>Senior Linux administrator</li>
+                <li>Guarding the functionality of IT products</li>
+                <li>Installing, Maintaining and Repairing of IT products</li>
+                <li>Senior Linux administrator</li>
+                <li>Safeguarging the functionality of IT products</li>
+                <li>Standardisation within and between IT products</li>
+                <li>Authorization and security</li>
+                <li>Datacenter design</li>
+                <li>Technical contact for tenders</li>
+              </ul>
+              <h2>Skills</h2>
+              <ul>
+                <li>Linux Administration (20 years)</li>
+                <li>Ansible Automation (8 years)</li>
+                <li>Puppet Automation (2 years)</li>
+                <li>Terraform Automation (<1 year)</li>
+                <li>OpenSSL</li>
+                <li>Bash Scripting</li>
+                <li>Penetration Testing (4 years) - confirmed by the Dutch government, Synology (2021), and Erasmus University Rotterdam.</li>
+                <li>SAML</li>
+              </ul>
+              <h2>Certifications</h2>
+              <ul>
+                <li>Modern Infrastructure Security training, certified secure</li>
+                <li>Red Hat RH302L/EX200, Red Hat</li>
+                <li>The Linux Professional Institute, Global Knowledge</li>
+              </ul>
+              <h2>Education</h2>
+              <ul>
+                <li>Modern Infrastructure Security training, certified secure</li>
+                <li>Red Hat RH302L/EX200, Red Hat</li>
+                <li>The Linux Professional Institute, Global Knowledge</li>
+                <li>VMUG (VMware User Group Netherlands), VMUG</li>
+                <li>VMware Infrastructure 3: What’s New, Xpert Training Group (XTG)</li>
+                <li>VMware Virtual Infrastructure with ESX Server and VirtualCenter, Xpert Training Group (XTG)</li>
+                <li>VMware vSphere 4: Fast Track, Xpert Training Group (XTG)</li>
+                <li>Puppet Camp Ghent, Belgium, N/A</li>
+                <li>Puppet Fundamentals, N/A</li>
+              </ul>
+              <h2>Previous affiliations</h2>
+              <ul>
+                <li>Dutch eID “eHerkenning” Security Officers Council</li>
+                <li>Dutch SURFcert (SCIRT team)</li>
+                <li>Erasmus SSC ICT Computer Emergency Response Team (CERT)</li>
+              </ul>
+            </ul>
+            </section>
+        </section>
+        <hr style="height:2px;background-color:black">
+        <h1>Contacting Vos IT Consultancy</h1>
+        <div id="Contact"></div>
+        <p>Feel free to contact us if you have any questions or inquiries.</p>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:REDACTED">REDACTED</a></li>
+          <li><strong>Email:</strong> <a href="mailto:nREDACTED">REDACTED</a></li>
         </ul>
       </main>
       <footer>
