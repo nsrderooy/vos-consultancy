@@ -8,7 +8,7 @@
     <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), layout-animations=(), legacy-image-formats=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="X-Content-Type-Options" content="'nosniff' always" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
+<!--    <meta http-equiv="X-Frame-Options" content="DENY" />-->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta name="referrer" content="no-referrer" />
     <title>About | Vos IT Consultancy</title>
@@ -24,21 +24,22 @@
     <link rel="icon" href="favicon-64x64.png" sizes="64x64" as="image" type="image/png" >
   </head>
   <body>
-
     <div class="container">
-      <header class="sticky-header">
-        <nav>
-          <ul>
-            <li><a href="#Mission">Mission</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Resume">Resume</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="#Blog">Blog</a></li>
-            <li><button class="button" id="switch-button">Toggle Stylesheet</button></li>
-            <script src="switchStyles.js"></script>
-          </ul>
-        </nav>
-      </header>
+      <div class="header-container">
+        <header class="sticky-header">
+          <nav>
+            <ul>
+              <li><a href="#Mission">Mission</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Resume">Resume</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Blog">Blog</a></li>
+              <li><button class="button" id="switch-button">Toggle Stylesheet</button></li>
+              <script src="switchStyles.js"></script>
+            </ul>
+          </nav>
+        </header>
+      </div>
       <main>
         <hr style="height:2px;background-color:black">
         <div id="Mission"></div>
@@ -180,9 +181,11 @@
           <li><strong>Email:</strong> <a href="mailto:nREDACTED">REDACTED</a></li>
         </ul>
       </main>
-      <footer>
-        <p>&copy; 2023 Vos IT Consultancy. All rights reserved.</p>
-      </footer>
+      <div class="footer-container">
+        <footer>
+          <p>&copy; 2023 Vos IT Consultancy. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

@@ -48,6 +48,13 @@ header {
   z-index: 1000;
 }
 
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 footer {
   height: 100px; /* set the height of the footer */
   padding: 1rem 2rem;
@@ -58,6 +65,13 @@ footer {
   position: fixed; /* make the footer fixed to the bottom of the page */
   bottom: 0; /* position the footer at the bottom of the page */
   width: 100%; /* make the footer full width */
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 main-content {
