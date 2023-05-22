@@ -1,20 +1,12 @@
-/* Base Styles */
+/* base styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-  font-family: 'Source Code Pro', monospace;
-  line-height: 1.5;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
 body {
-  background-image: url('vos-lineart-dark.svg');
+/*  background-image: url('vos-lineart-dark.svg');*/
   background-color: #282c34;
   color: #abb2bf;
   background-attachment: fixed;
@@ -23,65 +15,8 @@ body {
   background-position: center;
 }
 
-/*.container {
-  max-width: 90%;
-  width: 90%;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}*/
-
-header {
-  height: 100px; /* set the height of the header */
-  padding: 1rem 2rem;
-  color: orange;
-  max-width: 90%;
-  opacity: 1;
-  font-size: 1.2rem;
-  position: fixed; /* make the header fixed to the bottom of the page */
-  top: 0; /* position the header at the top of the page */
-  width: 100%; /* make the header full width */
-}
-
-/*.sticky-header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  z-index: 1000;
-}*/
-
-.header-container {
-  width: 90%;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-footer {
-  height: 100px; /* set the height of the footer */
-  padding: 1rem 2rem;
-  color: orange;
-  text-align: center;
-  opacity: 1;
-  font-size: 1.2rem;
-  position: fixed; /* make the footer fixed to the bottom of the page */
-  bottom: 0; /* position the footer at the bottom of the page */
-  width: 100%; /* make the footer full width */
-}
-
-.footer-container {
-  width: 90%;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 main-content {
-  margin-bottom: 100px;
+  margin-bottom: 100px; /* add a bottom margin equal to the height of the footer */
 }
 
 nav {
@@ -97,7 +32,7 @@ nav ul {
 }
 
 nav li a {
-  color: #ffa500;
+  color: orange;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
@@ -172,7 +107,7 @@ a[href^="mailto:"], a[href^="tel:"] {
   color: orange;
 }
 
-/* Responsive Styles */
+/* responsive styles */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -184,11 +119,11 @@ a[href^="mailto:"], a[href^="tel:"] {
 }
 
 a[href^="mailto:"] {
-  color: #FF8C00;
+  color: #ff8c00;
 }
 
 a[href^="tel:"] {
-  color: #FF8C00;
+  color: #ff8c00;
 }
 
 .button {
@@ -198,13 +133,13 @@ a[href^="tel:"] {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #544D40;
+  color: #544d40;
   background-color: orange;
   border: none;
   border-radius: 8px;
 }
 
-.button:hover {background-color: #FF8C00}
+.button:hover {background-color: #ff8c00}
 
 .button:active {
   background-color: teal;
@@ -219,4 +154,63 @@ main {
   max-width: 2200px;
   margin: 0 auto;
   padding: 60px 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+    margin: 1rem;
+/*    height: 8px;*/
+    display: flex;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.header-content span {
+    margin: 0 5rem;
+}
+
+@media only screen and (max-height:600px) {
+    .container {
+        height: auto;
+    }
+}
+
+.main {
+    margin: 1rem;
+    flex: 1 1 70%;
+    overflow: auto;
+}
+
+.footer {
+    margin: 1rem;
+    height: 8px;
+    display: flex;
+}
+
+html, body {
+  height: 100%;
+  background-image: url('vos-lineart-dark.svg');
+  background-color: #282c34;
+  color: #abb2bf;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'source code pro', monospace;
+  line-height: 1.5;
+  height: 100%;
+  scroll-behavior: smooth;
 }
