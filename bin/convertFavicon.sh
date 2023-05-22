@@ -16,9 +16,15 @@ for size in ${sizes[*]}
 do
   convert \
     "${gitroot}/docs/vos-lineart-dark.svg" \
-    -size "${size}" \
+    -geometry "${size}" \
     -transparent white \
     -background none \
     "${gitroot}/docs/favicon-${size}.png"
 done
 
+  convert \
+    "${gitroot}/docs/vos-lineart-dark.svg" \
+    -geometry 16x16 \
+    -transparent white \
+    -background none \
+    "${gitroot}/docs/favicon.ico"
