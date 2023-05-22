@@ -19,10 +19,10 @@ if (currentStyle === 'styleDark.css') {
 switchButton.addEventListener('click', () => {
   if (currentStyle === 'styleDark.css') {
     currentStyle = 'styleLight.css';
-    switchButton.textContent = 'Switch to Dark';
+    switchButton.textContent = 'Dark mode';
   } else {
     currentStyle = 'styleDark.css';
-    switchButton.textContent = 'Switch to Light';
+    switchButton.textContent = 'Light mode';
   }
   stylesheet.href = currentStyle;
   localStorage.setItem('style', currentStyle);
