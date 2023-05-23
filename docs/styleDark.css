@@ -6,7 +6,6 @@
 }
 
 body {
-/*  background-image: url('vos-lineart-dark.svg');*/
   background-color: #282c34;
   color: #abb2bf;
   background-attachment: fixed;
@@ -103,7 +102,7 @@ li::before {
   background-color: orange;
 }
 
-a[href^="mailto:"], a[href^="tel:"] {
+a[href^="mailto:"], a[href^="tel:"],  a[href^="https:"] {
   color: orange;
 }
 
@@ -116,14 +115,6 @@ a[href^="mailto:"], a[href^="tel:"] {
   nav li {
     margin-top: 1rem;
   }
-}
-
-a[href^="mailto:"] {
-  color: #ff8c00;
-}
-
-a[href^="tel:"] {
-  color: #ff8c00;
 }
 
 .button {
