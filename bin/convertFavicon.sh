@@ -28,3 +28,11 @@ convert \
   -transparent white \
   -background none \
   "${gitroot}/docs/favicon.ico"
+
+convert \
+  "${gitroot}/docs/vos-lineart-dark.svg" \
+  -density 1200 \
+  -resize 1080x1080 \
+  -transparent white \
+  -background none \
+  "${HOME}/Downloads/vos-lineart-dark.png"
