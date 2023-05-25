@@ -18,7 +18,12 @@ else
   packageInstaller=apt
 fi
 
-gitRoot=$(git rev-parse --show-toplevel)
+if [ -f ./.git/config ]
+then
+  gitRoot=$(git rev-parse --show-toplevel)
+else
+  gitRoot=./
+fi
 
 unset packagesToInstall
 
@@ -38,7 +43,6 @@ then
   fi
   sudo "${packageInstaller}" install "${packagesToInstall[@]}"
 fi
-
 
 if [ -f "${gitRoot}/pip_requirements.txt" ]
 then

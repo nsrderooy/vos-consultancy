@@ -1,7 +1,7 @@
 .ONESHELL:
 .NOTPARALLEL:
 SHELL          = bash
-PROJECT       := scripts
+PROJECT       := vos-consultancy
 GITROOT       := $(shell git rev-parse --show-toplevel)
 
 help:
