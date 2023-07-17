@@ -36,3 +36,20 @@ convert \
   -transparent white \
   -background none \
   "${HOME}/Downloads/vos-lineart-dark.png"
+
+convert \
+  "${gitroot}/docs/vos-lineart-light.svg" \
+  -density 1200 \
+  -resize 1080x1080 \
+  -transparent white \
+  -background none \
+  "${HOME}/Downloads/vos-lineart-light.png"
+
+convert \
+  "${gitroot}/docs/vos-lineart-dark.svg" \
+  -transparent white \
+  -background none \
+  -alpha set \
+  -channel RGBA \
+  -flatten \
+  "${gitroot}/docs/BIMI.svg"
