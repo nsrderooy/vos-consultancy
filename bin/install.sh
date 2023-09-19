@@ -29,7 +29,7 @@ unset packagesToInstall
 
 for requiredPackage in "${requiredPackages[@]:-}"
 do
-  if [ -n "$(apt list --installed "${requiredPackage}" 1> /dev/null 2> /dev/null)" ]
+  if ! dpkg --list "${requiredPackage}" | grep -q "^ii.*${requiredPackage}"
   then
     packagesToInstall+=("${requiredPackage}")
   fi
