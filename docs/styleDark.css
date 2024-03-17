@@ -189,7 +189,7 @@ main {
 
 html, body {
   height: 100%;
-  background-image: url('vos-lineart-dark.svg');
+  background-image: url('lineArtDark.svg');
   background-color: #282c34;
   color: #abb2bf;
   background-attachment: fixed;

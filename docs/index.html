@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Vos IT Consultancy</title>
-    <link rel="stylesheet" href="styleDark.css">
+    <link id="styleDark" rel="stylesheet" href="styleDark.css">
     <link rel="prefetch" href="styleDark.css" as="style" type="text/css">
     <link rel="prefetch" href="styleLight.css" as="style" type="text/css">
-    <link rel="prefetch" href="switchStyles.js" as="script">
-    <link rel="prefetch" href="headers.html">
-    <link rel="prefetch" href="vos-lineart-dark.svg" as="image" type="image/svg+xml">
-    <link rel="prefetch" href="vos-lineart-light.svg" as="image" type="image/svg+xml">
-    <link id="stylesheet" rel="stylesheet" href="styleDark.css">
+    <link rel="prefetch" href="switchStyles.js" as="script" type="text/javascript">
+    <link rel="prefetch" href="headers.html" type="text/html">
+    <link rel="prefetch" href="lineArtDark.svg" as="image" type="image/svg+xml">
+    <link rel="prefetch" href="lineArtLight.svg" as="image" type="image/svg+xml">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
@@ -31,7 +30,15 @@
                     </li>
                     <script src="switchStyles.js">
                         integrity="sha384-L8mkV8RotYnBk9BA2codPtbIogWMDOprHftVNkLwAf588edgpzG4ljvvQe4/RMWk"
-                          crossorigin="anonymous">
+                        crossorigin="anonymous"
+                        referrerpolicy="no-referrer"
+                        type="text/javascript">
+                    </script>
+                    <script src="updateCopyrightYear.js">
+                        integrity="sha384-6XisvDyjbeAw/Egph4Fj3EZUIVSQUaEjpOI7nhxc5ZLU+38e9P1/QDphZKRM70nC"
+                        crossorigin="anonymous"
+                        referrerpolicy="no-referrer"
+                        type="text/javascript">
                     </script>
                 </ul>
             </nav>
@@ -159,11 +166,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2023 Vos IT Consultancy PLT (202304000994 (LLP0034927-LGN)). All rights reserved.</p>
-        </div>
-    </footer>
 </div>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; <span id="copyright-year"></span> Vos IT Consultancy PLT (202304000994 (LLP0034927-LGN)). All rights
+            reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

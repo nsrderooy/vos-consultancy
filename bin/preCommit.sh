@@ -9,6 +9,9 @@ do
   cat <<EOF
   <script src="$(sed s/\.\\/docs\\///g <<< "${javaScriptFile}")">
     integrity="sha384-$(openssl dgst -sha384 -binary < "${javaScriptFile}" | openssl base64 -A)"
-      crossorigin="anonymous">
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    type="text/javascript">
+  </script>
 EOF
 done <<< "$(find ./docs/ -name \*.js)"

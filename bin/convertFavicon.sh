@@ -15,7 +15,7 @@ gitroot="$(git rev-parse --show-toplevel)"
 for size in ${sizes[*]}
 do
   convert \
-    "${gitroot}/docs/vos-lineart-dark.svg" \
+    "${gitroot}/docs/lineArtDark.svg" \
     -geometry "${size}" \
     -transparent white \
     -background none \
@@ -23,30 +23,30 @@ do
 done
 
 convert \
-  "${gitroot}/docs/vos-lineart-dark.svg" \
+  "${gitroot}/docs/lineArtDark.svg" \
   -geometry 16x16 \
   -transparent white \
   -background none \
   "${gitroot}/docs/favicon.ico"
 
 convert \
-  "${gitroot}/docs/vos-lineart-dark.svg" \
+  "${gitroot}/docs/lineArtDark.svg" \
   -density 1200 \
   -resize 1080x1080 \
   -transparent white \
   -background none \
-  "${HOME}/Downloads/vos-lineart-dark.png"
+  "${HOME}/Downloads/lineArtDark.png"
 
 convert \
-  "${gitroot}/docs/vos-lineart-light.svg" \
+  "${gitroot}/docs/lineArtLight.svg" \
   -density 1200 \
   -resize 1080x1080 \
   -transparent white \
   -background none \
-  "${HOME}/Downloads/vos-lineart-light.png"
+  "${HOME}/Downloads/lineArtLight.png"
 
 convert \
-  "${gitroot}/docs/vos-lineart-dark.svg" \
+  "${gitroot}/docs/lineArtDark.svg" \
   -transparent white \
   -background none \
   -alpha set \
