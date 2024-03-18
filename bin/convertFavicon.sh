@@ -4,6 +4,9 @@ set -euo pipefail
 # Remove hash to enable debug
 # set -euox pipefail
 
+darkImage=lineArtDark
+lightImage=lineArtLight
+
 sizes=(
   '16x16'
   '32x32'
@@ -15,7 +18,7 @@ gitroot="$(git rev-parse --show-toplevel)"
 for size in ${sizes[*]}
 do
   convert \
-    "${gitroot}/docs/lineArtDark.svg" \
+    "${gitroot}/docs/${darkImage}.svg" \
     -geometry "${size}" \
     -transparent white \
     -background none \
@@ -23,33 +26,24 @@ do
 done
 
 convert \
-  "${gitroot}/docs/lineArtDark.svg" \
+  "${gitroot}/docs/${darkImage}.svg" \
   -geometry 16x16 \
   -transparent white \
   -background none \
   "${gitroot}/docs/favicon.ico"
 
 convert \
-  "${gitroot}/docs/lineArtDark.svg" \
+  "${gitroot}/docs/${darkImage}.svg" \
   -density 1200 \
   -resize 1080x1080 \
   -transparent white \
   -background none \
-  "${HOME}/Downloads/lineArtDark.png"
+  "${HOME}/Downloads/${darkImage}.png"
 
 convert \
-  "${gitroot}/docs/lineArtLight.svg" \
+  "${gitroot}/docs/${lightImage}.svg" \
   -density 1200 \
   -resize 1080x1080 \
   -transparent white \
   -background none \
-  "${HOME}/Downloads/lineArtLight.png"
-
-convert \
-  "${gitroot}/docs/lineArtDark.svg" \
-  -transparent white \
-  -background none \
-  -alpha set \
-  -channel RGBA \
-  -flatten \
-  "${gitroot}/docs/BIMI.svg"
+  "${HOME}/Downloads/${lightImage}.png"

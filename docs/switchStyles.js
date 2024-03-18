@@ -1,5 +1,5 @@
 const switchButton = document.getElementById('switch-button');
-const stylesheet = document.getElementById('stylesheet');
+const stylesheet = document.getElementById('styleDark');
 
 // Load the saved style from localStorage, or use the default
 let currentStyle = localStorage.getItem('style');
